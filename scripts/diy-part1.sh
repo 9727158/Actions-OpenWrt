@@ -36,13 +36,7 @@ git clone --depth=1 https://github.com/2253845067/h69k-fanctrl package/h69k-fanc
 # cp -r modemfeed/luci/protocols/luci-proto-fm350/. package/Modem-Support/luci-proto-fm350
 
 # 下载openclash内核
-mkdir -p feeds/smpackage/luci-app-openclash/root/etc/openclash/core/
-wget -qO- https://raw.githubusercontent.com/vernesong/OpenClash/core/master/dev/clash-linux-arm64.tar.gz | tar xOvz > feeds/smpackage/luci-app-openclash/root/etc/openclash/core/clash
-wget -qO- https://raw.githubusercontent.com/vernesong/OpenClash/core/master/premium/clash-linux-arm64-2023.08.17-13-gdcc8d87.gz | gunzip -c > feeds/smpackage/luci-app-openclash/root/etc/openclash/core/clash_tun
-wget -qO- https://raw.githubusercontent.com/vernesong/OpenClash/core/master/meta/clash-linux-arm64.tar.gz | tar xOvz > feeds/smpackage/luci-app-openclash/root/etc/openclash/core/clash_meta
-wget -qO- https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat > feeds/smpackage/luci-app-openclash/root/etc/openclash/GeoIP.dat
-wget -qO- https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat > feeds/smpackage/luci-app-openclash/root/etc/openclash/GeoSite.dat
-chmod +x feeds/smpackage/luci-app-openclash/root/etc/openclash/core/clash*
+
 
 # MT7916 160mhz修复 （6.1内核下才需要使用）
 # rm -rf package/kernel/mt76
